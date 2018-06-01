@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{width: 200px;height: 100px;background-color: deepskyblue;border: 2px solid lightgray;display: none}
+    </style>
+</head>
+<body>
+  <input type="checkbox" onmouseover="
+  document.getElementById('div1').style.display='block';"onmouseout="
+  document.getElementById('div1').style.display='none';">
+<div id="div1"> <!--现在要实现的效果是当鼠标移入到input上的时候，让div1显示，鼠标移出的input的时候，让div1隐藏-->
+    为了您的信息安全，请慎重点。
+</div>
+</body>
+</html>
