@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{width: 200px;height: 200px;background-color: lightpink}
+    </style>
+    <script>
+        function toBlue() {
+            document.getElementById('div1').style.width='300px';
+            document.getElementById('div1').style.height='300px';
+            document.getElementById('div1').style.background='blue';
+        }<!--function这里就代表要引用函数，这里的toBlue只是对这个方法的命名，则在body内应用这个方法，则只需写名称-->
+    </script>
+    <script>
+        function toSkyblue() {
+            //变量
+            document.getElementById('div1').style.width='200px';
+            document.getElementById('div1').style.height='200px';
+            document.getElementById('div1').style.background='skyblue';
+        }
+    </script>
+</head>
+<body>
+ <div id="div1" onmouseover="toBlue()"onmouseout="toSkyblue()">
+
+ </div>
+</body>
+</html>
